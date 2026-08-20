@@ -1,0 +1,4 @@
+Line 1: Python is fun!
+Line 2: File I/O is easy.
+Line 3: 'with' ensures the file is closed.
+Line 4: Appended later.

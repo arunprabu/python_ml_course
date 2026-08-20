@@ -1,4 +1,4 @@
-name = "Alice"  # string
+name = "alice"  # string
 age = 25  # int
 marks = 100
 
