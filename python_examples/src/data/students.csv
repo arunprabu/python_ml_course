@@ -1,0 +1,9 @@
+student_id,name,department,marks_math,marks_python,marks_dbms,marks_networks
+S001,Alice Johnson,Computer Science,88,95,82,76
+S002,Bob Smith,Information Technology,72,78,68,80
+S003,Charlie Kumar,Computer Science,91,97,89,85
+S004,Diana Patel,Electronics,60,55,70,65
+S005,Eve Sharma,Computer Science,45,52,48,50
+S006,Frank Lee,Information Technology,85,88,90,82
+S007,Grace Wilson,Electronics,78,72,80,75
+S008,Henry Brown,Computer Science,92,94,88,91

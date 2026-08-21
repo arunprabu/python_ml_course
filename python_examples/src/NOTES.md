@@ -42,7 +42,10 @@ Dictionary (Dict)
 
 A Dictionary stores information as key-value pairs. Each key is unique and is used to access its corresponding value.
 
+```
 person = {
-"name": "John",
-"age": 25
+	"name": "John",
+	"age": 25
 }
+
+```

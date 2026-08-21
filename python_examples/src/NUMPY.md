@@ -4,7 +4,7 @@
 
 Python already has lists, but NumPy provides **arrays** that are faster and more convenient when working with large amounts of numerical data.
 
-> Runnable example for this note: [`ex25_numpy.py`](ex25_numpy.py)
+> Runnable example for this note: [`27_numpy.py`](27_numpy.py)
 
 ## Why NumPy?
 
@@ -44,7 +44,7 @@ print(np.mean(scores))
 
 This is worth understanding once, because it explains every other rule in this note.
 
-A Python **list** of 8 numbers does not store 8 numbers. It stores 8 *pointers* to 8 separate integer objects scattered around memory. Each object carries its own type information and reference count. To add 5 to every element, Python must follow each pointer, check the type, unbox the value, add, and build a new object — 8 times.
+A Python **list** of 8 numbers does not store 8 numbers. It stores 8 _pointers_ to 8 separate integer objects scattered around memory. Each object carries its own type information and reference count. To add 5 to every element, Python must follow each pointer, check the type, unbox the value, add, and build a new object — 8 times.
 
 A NumPy **array** stores the 8 values as raw 64-bit integers in **one continuous block of memory**. NumPy hands that whole block to a compiled C loop, which walks straight through it with no type checks and no object creation.
 
@@ -86,10 +86,10 @@ scores.dtype    # int64    the ONE type shared by every element
 
 `dtype` is inferred once, at creation, from everything you passed in. Because all elements must agree, one odd value silently changes the whole array:
 
-| You write | You get | Why it matters |
-| --- | --- | --- |
-| `np.array([85, 92, 78])` | `int64` | whole numbers |
-| `np.array([85, 92.5, 78])` | `float64` | one float **upcasts everything** |
+| You write                  | You get       | Why it matters                           |
+| -------------------------- | ------------- | ---------------------------------------- |
+| `np.array([85, 92, 78])`   | `int64`       | whole numbers                            |
+| `np.array([85, 92.5, 78])` | `float64`     | one float **upcasts everything**         |
 | `np.array([85, "A+", 78])` | `<U21` (text) | maths now fails — and nothing warned you |
 
 There is one more, and it catches people in marks-processing code:
@@ -160,11 +160,11 @@ marks_matrix[:, 1]   # [92 68 88]     — ALL rows, column 1 (one subject)
 
 Read the axis numbers straight off `.shape`, which is `(3, 4)`:
 
-| Call | Collapses | Shape change | Meaning |
-| --- | --- | --- | --- |
-| `.mean(axis=1)` | the `4` columns | `(3, 4)` → `(3,)` | one number per **row** → per student |
-| `.mean(axis=0)` | the `3` rows | `(3, 4)` → `(4,)` | one number per **column** → per subject |
-| `.mean()` | both | `(3, 4)` → `()` | a single scalar over all 12 values |
+| Call            | Collapses       | Shape change      | Meaning                                 |
+| --------------- | --------------- | ----------------- | --------------------------------------- |
+| `.mean(axis=1)` | the `4` columns | `(3, 4)` → `(3,)` | one number per **row** → per student    |
+| `.mean(axis=0)` | the `3` rows    | `(3, 4)` → `(4,)` | one number per **column** → per subject |
+| `.mean()`       | both            | `(3, 4)` → `()`   | a single scalar over all 12 values      |
 
 ```python
 marks_matrix.mean(axis=1).round(2)   # [86.25 73.75 91.5]   per student
@@ -174,13 +174,13 @@ marks_matrix.mean().round(2)         # 83.83                 everything
 
 **Shortcut to remember: the axis you name is the axis you lose.**
 
-**Sanity check when unsure:** the length of the answer equals the dimension you *kept*. Three students out, so that was `axis=1`.
+**Sanity check when unsure:** the length of the answer equals the dimension you _kept_. Three students out, so that was `axis=1`.
 
 The same rule applies to `.sum()`, `.max()`, `.min()`, `.std()` — and to Pandas, where `axis=1` again means "across the columns, one result per row".
 
 ### About `.round(2)`
 
-`.round(2)` rounds **every element** of the result in one call, which is why no per-value `f"{x:.2f}"` formatting is needed. But it rounds the stored *number*, it does not format *text*:
+`.round(2)` rounds **every element** of the result in one call, which is why no per-value `f"{x:.2f}"` formatting is needed. But it rounds the stored _number_, it does not format _text_:
 
 - `84.0` still prints as `84.` (a float whose decimals are zero)
 - NumPy pads with spaces to keep columns aligned: `[84.   82.67 81.67 87.  ]`
@@ -211,18 +211,18 @@ This is deliberate — it is what makes slicing large arrays free. Just be aware
 
 ## Quick Reference
 
-| Task | Code |
-| --- | --- |
-| Create from list | `np.array([1, 2, 3])` |
-| Dimensions / size / type | `a.shape`, `a.ndim`, `a.size`, `a.dtype` |
-| Maths on all elements | `a + 5`, `a * 2`, `a ** 2` |
-| Filter | `a[a > 80]` |
-| Count matches | `(a > 80).sum()` |
-| Statistics | `a.mean()`, `a.std()`, `np.median(a)`, `a.min()`, `a.max()` |
-| Per row (2-D) | `a.mean(axis=1)` |
-| Per column (2-D) | `a.mean(axis=0)` |
-| Change shape | `a.reshape(2, 3)` |
-| Independent copy | `a.copy()` |
+| Task                     | Code                                                        |
+| ------------------------ | ----------------------------------------------------------- |
+| Create from list         | `np.array([1, 2, 3])`                                       |
+| Dimensions / size / type | `a.shape`, `a.ndim`, `a.size`, `a.dtype`                    |
+| Maths on all elements    | `a + 5`, `a * 2`, `a ** 2`                                  |
+| Filter                   | `a[a > 80]`                                                 |
+| Count matches            | `(a > 80).sum()`                                            |
+| Statistics               | `a.mean()`, `a.std()`, `np.median(a)`, `a.min()`, `a.max()` |
+| Per row (2-D)            | `a.mean(axis=1)`                                            |
+| Per column (2-D)         | `a.mean(axis=0)`                                            |
+| Change shape             | `a.reshape(2, 3)`                                           |
+| Independent copy         | `a.copy()`                                                  |
 
 ### Simple way to remember
 
