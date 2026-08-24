@@ -1,0 +1,61 @@
+# Customer Churn ML Demo - All Dependencies
+# Python 3.13.9 Compatible
+# Install all dependencies with: pip install -r requirements.txt
+
+# ============================================
+# MANDATORY DEPENDENCIES
+# ============================================
+
+# Core data manipulation and analysis
+pandas>=2.2.0,<3.0.0
+numpy>=1.26.0,<2.0.0
+
+# Machine Learning
+scikit-learn>=1.5.0,<2.0.0
+
+# Data visualization
+matplotlib>=3.9.0,<4.0.0
+seaborn>=0.13.0,<1.0.0
+plotly>=5.24.0,<6.0.0
+
+# Model serving and serialization
+joblib>=1.4.0,<2.0.0
+
+# Web Framework
+streamlit>=1.39.0,<2.0.0
+
+# ============================================
+# OPTIONAL DEPENDENCIES
+# ============================================
+
+# --- Progress Bars (for long-running operations) ---
+# tqdm>=4.66.0,<5.0.0
+
+# --- Advanced ML Models ---
+# xgboost>=2.1.0,<3.0.0
+# lightgbm>=4.5.0,<5.0.0
+
+# --- Model Explainability ---
+# shap>=0.46.0,<1.0.0
+
+# --- Hyperparameter Tuning ---
+# optuna>=3.6.0,<4.0.0
+
+# --- Handling Imbalanced Datasets ---
+# imbalanced-learn>=0.12.0,<1.0.0
+
+# --- Jupyter Notebook Support ---
+# jupyter>=1.0.0,<2.0.0
+# ipykernel>=6.29.0,<7.0.0
+
+# --- Data Validation ---
+# pydantic>=2.8.0,<3.0.0
+
+# --- Deployment (Streamlit) ---
+# streamlit>=1.39.0,<2.0.0
+# python-dotenv>=1.0.0,<2.0.0
+# cachetools>=5.5.0,<6.0.0
+# psutil>=6.0.0,<7.0.0
+
+# --- Backwards Compatibility ---
+# pickle5>=0.0.12

@@ -1,0 +1,24 @@
+{% extends "blog/base.html" %} {% block content %}
+
+<h1 class="page-title">{{ page_title }}</h1>
+
+{% for post in posts %}
+<div class="card">
+  <h2><a href="{% url 'blog:post_detail' post.slug %}">{{ post.title }}</a></h2>
+  <div class="meta">
+    &#128197; {{ post.created_at|date:"M d, Y" }} &nbsp;|&nbsp; &#9997; {{
+    post.author.get_full_name|default:post.author.username }} &nbsp;|&nbsp;
+    <span class="badge">{{ post.category.name }}</span>
+  </div>
+  <p>{{ post.content|truncatewords:30 }}</p>
+  <p style="margin-top: 0.8rem">
+    <a href="{% url 'blog:post_detail' post.slug %}" class="back-link"
+      >Read more &rarr;</a
+    >
+  </p>
+</div>
+{% empty %}
+<div class="card">
+  <p>No posts yet. Go to <a href="/admin/">Admin</a> and create some!</p>
+</div>
+{% endfor %} {% endblock %}

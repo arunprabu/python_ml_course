@@ -1,0 +1,15 @@
+{% extends "blog/base.html" %} {% block content %}
+
+<a href="{% url 'blog:post_list' %}" class="back-link">&larr; Back to posts</a>
+
+<div class="post-content">
+  <h1>{{ post.title }}</h1>
+  <div class="meta" style="margin: 0.4rem 0 1rem">
+    &#128197; {{ post.created_at|date:"F d, Y" }} &nbsp;|&nbsp; &#9997; {{
+    post.author.get_full_name|default:post.author.username }} &nbsp;|&nbsp;
+    <span class="badge">{{ post.category.name }}</span>
+  </div>
+  <div class="post-body">{{ post.content|linebreaks }}</div>
+</div>
+
+{% endblock %}

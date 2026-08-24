@@ -1,0 +1,9 @@
+metric,value
+Initial Records,106
+Final Records,100
+Records Removed,6
+Initial Missing Values,106
+Final Missing Values,0
+Initial Duplicates,6
+Final Duplicates,0
+Outliers Fixed,"Multiple (age, charges, scores)"

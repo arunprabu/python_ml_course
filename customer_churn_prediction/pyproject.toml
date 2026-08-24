@@ -1,0 +1,17 @@
+[project]
+name = "customer-churn-prediction"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+	"pandas",
+    "numpy",
+    "scikit-learn",
+    "matplotlib",
+    "seaborn",
+    "plotly",
+    "joblib",
+    "streamlit",
+    "mlflow>=3.15.1"
+]

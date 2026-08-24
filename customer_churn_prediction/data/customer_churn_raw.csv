@@ -1,0 +1,107 @@
+customer_id,age,gender,tenure_months,subscription_plan,monthly_charges,total_charges,contract_type,payment_method,login_frequency_monthly,features_used,data_consumption_gb,engagement_score,days_since_last_activity,billing_issues_count,plan_changes,support_tickets,avg_resolution_hours,satisfaction_score,nps_score,churned
+C001,34.0,Male,24,Premium,79.99,1919.76,Annual,Credit Card,22.0,8,45.2,150.0,2,0,1,1,4.5,4.2,8,0
+C002,45.0,Female,6,Basic,29.99,179.94,Monthly,Bank transfer,5.0,2,8.3,25.0,15,2,0,4,48.2,2.1,3,1
+C003,28.0,Male,36,Premium,79.99,2879.64,Annual,Credit Card,28.0,10,62.1,92.0,1,0,2,0,0.0,4.8,9,0
+C004,52.0,F,3,Basic,29.99,89.97,Monthly,credit card,3.0,1,4.2,18.0,22,1,0,3,36.5,2.5,2,1
+C005,31.0,Male,-10,Standard,49.99,899.82,Monthly,Pay Pal,15.0,5,28.4,65.0,5,0,0,2,12.3,3.8,7,0
+C006,67.0,Male,0,Premium,79.99,3839.52,Annual,Bank Transfer,20.0,7,38.9,71.0,3,0,0,1,6.2,4.0,7,0
+C007,23.0,,2,Basic,$29.99,59.98,Monthly,Credit Card,2.0,1,,12.0,28,1,0,5,52.1,1.8,1,1
+C008,41.0,Male,30,Standard,49.99,1499.7,Annual,CC,18.0,6,35.2,72.0,4,0,1,1,8.4,4.1,8,0
+C009,38.0,Female,12,Premium,79.99,959.88,Monthly,PayPal,8.0,3,15.6,35.0,18,3,1,6,42.3,2.3,3,1
+C010,29.0,Male,24,Standard,,,Annual,Credit Card,20.0,6,32.8,75.0,2,0,0,0,0.0,4.5,9,0
+C011,55.0,Female,4,Basic,29.99,,Monthly,Bank Transfer,4.0,2,5.8,,20,2,0,4,38.7,10.5,2,1
+ C012 ,33.0,Male,42,,79.99,3359.58,Annual,Credit Card,25.0,9,55.3,88.0,1,0,1,1,5.1,4.6,9,0
+C013,47.0,Female,8,Standard,$-50.00,,Monthly,Credit Card,6.0,3,12.4,32.0,16,1,0,3,28.9,2.9,4,1
+C014,26.0,Male,15,Basic,,449.85,Monthly,PayPal,12.0,4,18.6,58.0,6,0,0,1,10.2,3.6,6,0
+C015,62.0,Female,60,Premium,,,Annual,Bank Transfer,19.0,8,42.1,76.0,2,0,2,2,7.8,4.3,8,0
+ C016 ,,Male,5,,49.99,249.95,Monthly,Credit Card,4.0,2,8.9,28.0,19,2,1,5,45.6,2.4,3,1
+C017,44.0,Female,28,Premium,79.99,2239.72,Annual,Credit Card,24.0,9,52.4,85.0,1,0,0,0,0.0,4.7,9,0
+C018,30.0,male,3,Basic,,89.97,Monthly,PayPal,3.0,1,3.5,,25,1,0,4,40.1,2.0,2,1
+C019,58.0,Female,36,Standard,49.99,1799.64,Annual,BT,16.0,5,29.8,68.0,4,0,1,2,11.5,3.9,7,0
+C020,,,9,Premium,79.99,719.91,Monthly,Credit Card,10.0,4,22.3,45.0,12,2,0,3,32.4,,5,1
+C021,49.0,Female,24,Standard,49.99,1199.76,Annual,Credit Card,17.0,6,31.5,70.0,3,0,0,1,9.3,4.0,7,0
+C022,37.0,Male,2,Basic,29.99,59.98,Monthly,PayPal,2.0,1,1.8,10.0,30,2,0,6,55.2,,1,1
+C023,42.0,female,48,Premium,79.99,,Annual,Bank Transfer,26.0,10,58.7,90.0,1,0,2,0,0.0,4.9,10,0
+C024,27.0,,6,Standard,49.99,299.94,Monthly,Credit Card,7.0,3,14.2,38.0,14,1,0,3,25.6,2.8,4,1
+C025,53.0,Female,20,Premium,,1599.8,Annual,Credit Card,21.0,8,46.3,79.0,2,0,1,1,6.8,4.4,8,0
+C026,32.0,Male,4,Basic,29.99,,Monthly,Bank Transfer,4.0,2,6.1,24.0,21,2,0,4,41.3,2.3,3,1
+ C027 ,46.0,Female,32,,49.99,1599.68,Annual,,18.0,6,33.9,73.0,3,0,0,1,7.5,4.2,8,0
+C028,24.0,Male,7,Premium,79.99,559.93,Monthly,Credit Card,9.0,4,19.8,42.0,13,1,0,2,22.1,3.2,5,1
+C029,60.0,Female,54,PREMIUM,79.99,4319.46,Annual,Bank Transfer,22.0,9,49.5,,2,0,1,1,5.9,4.5,9,0
+C030,36.0,Male,3,Standard,49.99,149.97,Monthly,Credit Card,,2,7.2,20.0,23,2,0,5,48.9,,2,1
+C031,43.0,Female,26,Premium,,2079.74,Annual,Credit Card,23.0,8,51.2,,1,0,0,0,0.0,4.6,9,0
+C032,29.0,Male,5,basic,29.99,149.95,Monthly,PayPal,,2,9.4,30.0,17,1,0,3,30.2,2.7,4,1
+C033,51.0,Female,40,Standard,49.99,1999.6,Annual,Bank Transfer,17.0,6,34.6,74.0,3,0,1,1,8.1,4.1,8,0
+C034,22.0, Male,2,Basic,29.99,59.98,Monthly,Credit Card,2.0,1,2.5,14.0,26,2,0,5,50.3,1.9,2,1
+C035,48.0,Female,22,Premium,,1759.78,Annual,Credit Card,21.0,7,44.8,77.0,2,0,0,1,7.2,-1.0,8,0
+C036,34.0,Male,8,Standard,49.99,399.92,Monthly,PayPal,8.0,3,16.3,40.0,15,1,0,3,26.8,3.0,5,1
+C037,56.0,Female,44,Premium,79.99,3519.56,Annual,Bank Transfer,24.0,9,54.2,86.0,1,0,2,0,0.0,,9,0
+C038,31.0,Male,4,Basic,29.99,119.96,Monthly,Credit Card,4.0,1,5.2,21.0,22,2,0,4,43.5,2.2,3,1
+C039,40.0,Female,30,Standard,49.99,,Annual,Credit Card,19.0,6,36.1,75.0,3,0,1,1,9.8,4.2,8,0
+C040,26.0,Male,6,Premium,,479.94,Monthly,PayPal,7.0,3,13.5,36.0,16,2,0,4,35.7,2.6,4,1
+C041,150.0,,52,Premium,79.99,4159.48,Annual,Bank Transfer,,8,43.6,78.0,2,0,1,1,6.5,4.4,8,0
+C042,33.0,,3,Standard,49.99,149.97,Monthly,Credit Card,3.0,2,6.8,19.0,24,1,0,4,44.2,2.3,3,1
+C043,45.0,Female,34,Premium,,2719.66,Annual,Credit Card,25.0,9,56.8,89.0,1,0,0,0,0.0,4.8,9,0
+C044,28.0,Male,5,BASIC,29.99,149.95,Monthly,Bank Transfer,,2,,27.0,18,2,0,3,33.6,2.5,3,1
+C045,54.0,Female,38,Standard,49.99,1899.62,Annual,PayPal,18.0,6,35.4,74.0,3,0,1,2,10.4,,7,0
+C046,,Male,10,Premium,0.01,799.9,Monthly,Credit Card,11.0,5,24.6,52.0,10,1,0,2,18.9,3.4,6,0
+C047,50.0,Female,28,Premium,79.99,,Annual,Bank Transfer,22.0,8,48.2,80.0,2,0,0,1,7.0,4.4,8,0
+C048,25.0,Male,4,,29.99,119.96,Monthly,Credit Card,3.0,1,4.5,18.0,21,2,0,5,47.8,2.0,2,1
+C049,41.0,,16,Standard,49.99,799.84,Annual,Credit Card,14.0,5,26.7,62.0,5,0,0,1,11.2,3.7,7,0
+C050,35.0,Male,12,Premium+,,959.88,Monthly,PayPal,13.0,5,30.2,58.0,8,0,0,2,14.6,3.5,6,0
+C051,34.0,Male,24,,79.99,1919.76,Annual,Credit Card,22.0,8,45.2,78.0,2,0,1,1,4.5,4.2,8,0
+C052,48.0,FEMALE,6,Basicc,34.49714306409916,179.94,Monthly,BankTransfer,5.0,2,,23.0,15,2,0,4,48.2,2.1,3,1
+ C053 ,28.0,Male,36,Premium,79.99,,Annual,Credit  Card,28.0,10,62.1,92.0,1,0,2,0,0.0,4.8,9,0
+C054,52.0,Female,3,Basic,,89.97,Monthly,CreditCard,3.0,1,4.2,18.0,22,1,0,3,36.5,2.5,2,1
+C055,,,18,Standard,50.976584841970364,899.82,Monthly,,15.0,5,28.4,,5,0,0,2,12.3,3.8,7,0
+C056,67.0,Male,48,Premium,79.99,3839.52,Annual,bank transfer,20.0,7,38.9,,3,0,0,1,6.2,4.0,7,0
+C057,23.0,Female,2,Basic,29.99,59.98,Monthly,Credit Card,2.0,1,2.1,12.0,28,1,0,5,52.1,1.8,1,1
+C058,44.0,Male,30,Std,46.54994520336203,1499.7,Annual,Credit Card,18.0,6,35.2,76.0,4,0,1,1,8.4,4.1,8,0
+C059,38.0,Female,12,,79.99,959.88,Monthly,Paypal,8.0,3,15.6,35.0,18,3,1,6,42.3,2.3,3,1
+C060,29.0,M,24,Standard,$49.99,1199.76,Annual,Credit Card,20.0,6,32.8,75.0,2,0,0,0,0.0,4.5,9,0
+C061,54.0,Female,4,,33.65176145774935,119.96,Monthly,Bank Transfer,4.0,2,5.8,27.0,20,2,0,4,38.7,2.2,2,1
+C062,33.0,Male,42,Premium,79.99,3359.58,Annual,Credit Card,,9,55.3,88.0,1,0,1,1,5.1,4.6,9,0
+C063,47.0,Female,8,Standard,,,Monthly,Credit Card,6.0,3,12.4,32.0,16,1,0,3,28.9,2.9,4,1
+C064,26.0,Male,15,Basic,32.070725777960455,449.85,Monthly,PAYPAL,12.0,4,18.6,60.0,6,0,0,1,10.2,3.6,6,0
+C065,,Female,60,Premium,79.99,4799.4,Annual,Bank Transfer,19.0,8,42.1,76.0,2,0,2,2,7.8,4.3,8,0
+C066,35.0,Male,5,Standard,$49.99,249.95,Monthly,Credit Card,4.0,2,8.9,28.0,19,2,1,5,45.6,2.4,3,1
+C067,999.0,Female,28,Premium,84.68909852161994,2239.72,Annual,Credit Card,24.0,9,52.4,84.0,1,0,0,0,0.0,4.7,9,0
+C068,30.0,Male,3,Basic,29.99,89.97,Monthly,paypal,,1,3.5,15.0,25,1,0,4,40.1,,2,1
+C069,58.0,Female,36,Standard ,49.99,1799.64,Annual,Bank Transfer,16.0,5,29.8,-20.0,4,0,1,2,11.5,3.9,7,0
+ C070 ,25.0,Male,9,Premium,74.99778765841013,719.91,Monthly,Credit Card,10.0,4,22.3,45.0,12,2,0,3,32.4,3.0,5,1
+C071,49.0,Female,24,Standard,,1199.76,Annual,Credit Card,17.0,6,31.5,70.0,3,0,0,1,9.3,4.0,7,0
+C072,37.0,Male,2,Basic,29.99,59.98,Monthly,PayPal,2.0,1,1.8,10.0,30,2,0,6,55.2,1.5,1,1
+C073,42.0,Female,48,Premium,81.16481509627717,3839.52,Annual,Bank Transfer,26.0,10,,89.0,1,0,2,0,0.0,4.9,10,0
+C074,27.0,Male ,6,STANDARD,49.99,299.94,Monthly,Credit Card,7.0,3,14.2,38.0,14,1,0,3,25.6,2.8,4,1
+C075,,Female,20,Premium,$79.99,1599.8,Annual,,21.0,8,46.3,79.0,2,0,1,1,6.8,4.4,8,0
+C076,30.0,,4,Basic ,25.06066305219717,,Monthly,Bank Transfer,4.0,2,6.1,24.0,21,2,0,4,41.3,2.3,3,1
+C077,46.0,Female,32,Standard,49.99,,Annual,PayPal,18.0,6,33.9,,3,0,0,1,7.5,4.2,8,0
+C078,24.0,Male,7,Premium,79.99,559.93,Monthly,Credit Card,9.0,4,19.8,42.0,13,1,0,2,22.1,3.2,5,1
+C079,57.0,Female,54,Premium,80.23774660258388,,Annual,Bank Transfer,22.0,9,,77.0,2,0,1,1,5.9,4.5,9,0
+C080,36.0,,3,Standard,49.99,149.97,Monthly,Credit Card,3.0,2,7.2,20.0,23,2,0,5,48.9,2.1,2,1
+C081,43.0,Female,26,Premium,79.99,2079.74,Annual,Credit card,23.0,8,51.2,,1,0,0,0,0.0,4.6,9,0
+C082,32.0,MALE,5,,25.456656632136152,149.95,Monthly,PayPal,5.0,2,9.4,34.0,17,1,0,3,30.2,2.7,4,1
+C083,-5.0,Female,40,Standard,49.99,1999.6,Annual,Bank Transfer,17.0,6,34.6,74.0,3,0,1,1,8.1,4.1,8,0
+C084,22.0,Male,2,Basic,29.99,59.98,Monthly,Credit Card,2.0,1,2.5,14.0,26,2,0,5,50.3,1.9,2,1
+C085,48.0,Female,22,Premium,78.81461991267162,1759.78,Annual,Credit Card,21.0,7,,74.0,2,0,0,1,7.2,4.3,8,0
+C086,,Male,8,Standard,49.99,399.92,Monthly,PayPal,,3,16.3,40.0,15,1,0,3,26.8,3.0,5,1
+C087,56.0,Female,44,Premium,79.99,3519.56,Annual,,,9,54.2,86.0,1,0,2,0,0.0,4.7,9,0
+C088,,Male,4,,25.454504127199975,,Monthly,Credit Card,4.0,1,5.2,24.0,22,2,0,4,43.5,2.2,3,1
+C089,,Female,30,Standard,49.99,1499.7,Annual,Credit Card,19.0,6,36.1,75.0,3,0,1,1,9.8,4.2,8,0
+C090,26.0,Male,6,,79.99,479.94,Monthly,PayPal,7.0,3,,999.0,16,2,0,4,35.7,2.6,4,1
+C091,62.0,Female,52,Premium ,76.6952412368729,4159.48,Annual,Bank Transfer,20.0,8,43.6,79.0,2,0,1,1,6.5,4.4,8,0
+C092,,Male,3,Standard,49.99,149.97,Monthly,Credit Card,3.0,2,6.8,19.0,24,1,0,4,44.2,,3,1
+C093,45.0,Female,34,premium,79.99,2719.66,Annual,Credit Card,25.0,9,56.8,89.0,1,0,0,0,0.0,4.8,9,0
+C094,31.0,Male,5,Basic,34.47885537253333,149.95,Monthly,Bank Transfer,5.0,2,8.1,23.0,18,2,0,3,33.6,2.5,3,1
+C095,54.0,Female,38,Standard,49.99,1899.62,Annual,PayPal,18.0,6,35.4,,3,0,1,2,10.4,4.0,7,0
+C096,38.0,,10,Premium,79.99,799.9,Monthly,,11.0,5,24.6,52.0,10,1,0,2,18.9,3.4,6,0
+C097,50.0,Female,28,Premium,78.84416502539915,2239.72,Annual,Bank Transfer,22.0,8,48.2,76.0,2,0,0,1,7.0,4.4,8,0
+C098,25.0,Male,4,Basic,29.99,,Monthly,Credit Card,3.0,1,4.5,18.0,21,2,0,5,47.8,2.0,2,1
+C099,41.0,Female,16,Standard,49.99,799.84,Annual,,14.0,5,,62.0,5,0,0,1,11.2,,7,0
+C100,33.0,Male,12,Premium,77.29893825622149,959.88,Monthly,PayPal,13.0,5,30.2,57.0,8,0,0,2,14.6,3.5,6,0
+C035,48.0,Female,22,Premium,,1759.78,Annual,Credit Card,21.0,7,44.8,77.0,2,0,0,1,7.2,4.3,8,0
+C030,36.0,Male,3,standard,49.99,149.97,Monthly,Credit Card,,2,7.2,20.0,23,2,0,5,48.9,,2,1
+C096,38.0,,10,Premium,79.99,799.9,Monthly,,11.0,5,24.6,52.0,10,1,0,2,18.9,3.4,6,0
+C065,,Female ,60,Premium,79.99,4799.4,Annual,Bank Transfer,19.0,8,42.1,76.0,2,0,2,2,7.8,4.3,8,0
+C007,23.0,,2,Basic,29.99,59.98,Monthly,Credit Card,2.0,1,,12.0,28,1,0,5,52.1,1.8,1,1
+C048,25.0,Male,4,,29.99,119.96,Monthly,Credit Card,3.0,1,4.5,18.0,21,2,0,5,47.8,2.0,2,1

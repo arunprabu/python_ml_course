@@ -1,0 +1,32 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{{ page_title }} | MyBlog{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="{% url 'blog:post_list' %}">&#128215; MyBlog</a>
+      <a href="/admin/" style="font-size: 0.9rem; color: #aaa">Admin &#9654;</a>
+    </nav>
+
+    <div class="container">
+      <main>{% block content %}{% endblock %}</main>
+
+      <aside>
+        <div class="sidebar-card">
+          <h3>About</h3>
+          <p style="font-size: 0.9rem; color: #555">
+            A simple Django blog built during Day 4 of the Python &amp; Django
+            training.
+          </p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>&copy; 2026 MyBlog &mdash; Built with Django</footer>
+  </body>
+</html>
