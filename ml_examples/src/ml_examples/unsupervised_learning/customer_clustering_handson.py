@@ -24,8 +24,50 @@ customer is; we'll let K-Means find that structure.
 # directly so the example runs standalone with no extra files.
 
 data = {
-    "visits_per_month": [1, 2, 1, 2, 1, 8, 9, 7, 8, 9, 2, 3, 2, 3, 2, 10, 11, 9, 10, 12],
-    "avg_basket_value": [15, 18, 12, 20, 16, 20, 22, 18, 25, 21, 80, 85, 78, 90, 82, 60, 65, 58, 70, 62],
+    "visits_per_month": [
+        1,
+        2,
+        1,
+        2,
+        1,
+        8,
+        9,
+        7,
+        8,
+        9,
+        2,
+        3,
+        2,
+        3,
+        2,
+        10,
+        11,
+        9,
+        10,
+        12,
+    ],
+    "avg_basket_value": [
+        15,
+        18,
+        12,
+        20,
+        16,
+        20,
+        22,
+        18,
+        25,
+        21,
+        80,
+        85,
+        78,
+        90,
+        82,
+        60,
+        65,
+        58,
+        70,
+        62,
+    ],
 }
 
 df = pd.DataFrame(data)
@@ -71,7 +113,9 @@ df["cluster"] = model.fit_predict(X_scaled)
 
 # STEP 6 — Interpret each cluster
 
-profile = df.groupby("cluster")[["visits_per_month", "avg_basket_value"]].mean().round(1)
+profile = (
+    df.groupby("cluster")[["visits_per_month", "avg_basket_value"]].mean().round(1)
+)
 profile["customers"] = df.groupby("cluster").size()
 
 print(f"Cluster profile (K={k}):")
@@ -90,7 +134,9 @@ new_customer = pd.DataFrame({"visits_per_month": [9], "avg_basket_value": [24]})
 new_customer_scaled = scaler.transform(new_customer)
 predicted_cluster = model.predict(new_customer_scaled)[0]
 
-print(f"\nNew customer (9 visits/month, ₹24 avg basket) assigned to cluster: {predicted_cluster}")
+print(
+    f"\nNew customer (9 visits/month, $24 avg basket) assigned to cluster: {predicted_cluster}"
+)
 
 # ---------------------------------------------------------------------------
 # TRY IT YOURSELF — see customer_clustering_handson.md for the full exercises.

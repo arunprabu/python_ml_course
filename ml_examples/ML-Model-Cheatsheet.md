@@ -42,7 +42,7 @@ Regression means predicting a numerical value.
 | Regression     | CatBoost                  | `CatBoostRegressor`                       | Categorical-friendly boosting         | Business/tabular data           |
 | Regression     | Neural Network            | `MLPRegressor`                            | Learns complex relationships          | Complex nonlinear problems      |
 
-Clustering
+# Clustering
 
 Clustering is different because you don't have a target y.
 
@@ -208,14 +208,14 @@ Instead of relying on one model, combine multiple models.
 This is the part I'd recommend memorizing:
 
 ```
-                    MACHINE LEARNING
-                           │
-          ┌────────────────┼────────────────┐
-          │                │                │
-     SUPERVISED       UNSUPERVISED      OTHER
-          │                │
-      ┌───┴───┐        ┌───┴─────┐
-      │       │        │         │
+                            MACHINE LEARNING
+                                   │
+          ┌────────────────────────┼────────────────┐
+          │                        │                │
+     SUPERVISED               UNSUPERVISED         OTHER
+          │                        │
+      ┌───┴───┐                ┌───┴─────┐
+      │       │                │         │
 Classification Regression  Clustering  Anomaly
       │       │
       │       │

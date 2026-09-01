@@ -5,6 +5,9 @@ This interactive app demonstrates the customer churn prediction model.
 Users can input customer features and get real-time churn predictions with explanations.
 """
 
+# command to run
+# streamlit run app/streamlit_app.py
+
 import streamlit as st
 import pandas as pd
 import numpy as np

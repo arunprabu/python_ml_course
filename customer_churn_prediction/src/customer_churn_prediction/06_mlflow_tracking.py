@@ -105,8 +105,10 @@ print("=" * 80)
 print(comparison.to_string(index=False))
 
 best = comparison.iloc[0]
-print(f"\n✓ Best run: n_estimators={int(best['n_estimators'])}, "
-      f"max_depth={int(best['max_depth'])} -> accuracy={best['accuracy']:.4f}")
+print(
+    f"\n✓ Best run: n_estimators={int(best['n_estimators'])}, "
+    f"max_depth={int(best['max_depth'])} -> accuracy={best['accuracy']:.4f}"
+)
 
 print("\n" + "=" * 80)
 print("TRACKING COMPLETE")

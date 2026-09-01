@@ -26,10 +26,10 @@ print(f"dtype:         {scores.dtype}")
 
 # # Element-wise operations — no loop needed!
 print(f"\nAdd 5 to all:  {scores + 5}")
-# print(f"Double all:    {scores * 2}")
-# print(f"Above 80:      {scores[scores > 80]}")  # boolean indexing
+print(f"Double all:    {scores * 2}")
+print(f"Above 80:      {scores[scores > 80]}")  # boolean indexing
 
-# Statistical operations
+# # Statistical operations
 print(f"\nMean:    {np.mean(scores):.2f}")
 print(f"Std Dev: {np.std(scores):.2f}")
 print(f"Min:     {np.min(scores)}")
@@ -48,8 +48,8 @@ marks_matrix = np.array(
 # it on its own line to keep the rows aligned.
 print(f"\n2D marks matrix:\n{marks_matrix}")
 
-# (3, 4) — 2 dimensions, outermost first: 3 rows then 4 columns. Inner lists
-# must be equal length or NumPy raises ValueError.
+# # (3, 4) — 2 dimensions, outermost first: 3 rows then 4 columns. Inner lists
+# # must be equal length or NumPy raises ValueError.
 print(f"Shape: {marks_matrix.shape}")
 
 # ---- axis: the one idea people get backwards --------------------------------
@@ -61,8 +61,8 @@ print(f"Shape: {marks_matrix.shape}")
 # .round(2) rounds every element of the result array in one call (it rounds
 # the stored float, it does not format text — 84.0 still displays as "84.").
 
-# Alice (85+92+78+90)/4=86.25, Bob 73.75, Charlie 91.5
+# # Alice (85+92+78+90)/4=86.25, Bob 73.75, Charlie 91.5
 print(f"Row averages (per student): {marks_matrix.mean(axis=1).round(2)}")
 
-# Subject 1 (85+72+95)/3=84.0, then 82.67, 81.67, 87.0
+# # Subject 1 (85+72+95)/3=84.0, then 82.67, 81.67, 87.0
 print(f"Col averages (per subject): {marks_matrix.mean(axis=0).round(2)}")
